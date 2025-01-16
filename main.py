@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 import asyncio
 from config import *
-import flet
+import flask import Flask 
  
 app = Client(
     "app",
@@ -72,5 +72,6 @@ def get_file_details(update):
 
 print("Bot Started..")
 
-#app.run()
-flet.app(target=app.run(), view=flet.AppView.WEB_BROWSER)
+app.run()
+if __name__ = 'main':
+    app.run(debug=True)
