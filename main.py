@@ -72,5 +72,5 @@ def get_file_details(update):
 
 print("Bot Started..")
 
-app.run()
+#app.run()
 flet.app(target=app)
