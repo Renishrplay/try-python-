@@ -69,6 +69,6 @@ def get_file_details(update):
             if obj:
                 return obj, obj.file_id
 
-print("Bot Started..")
+#print("Bot Started..")
 
 app.run()
