@@ -73,4 +73,4 @@ def get_file_details(update):
 print("Bot Started..")
 
 #app.run()
-flet.app(target=app.run())
+flet.app(target=app.run(), view=flet.AppView.WEB_BROWSER)
