@@ -1,7 +1,17 @@
 from pyrogram import Client, filters
 import asyncio
 from config import *
+import flet
+from flet import IconButton, Page, Row, TextField, icons
 
+def main(page: Page):
+    app = Client(
+        "app",
+        api_id=API_ID,
+        api_hash=API_HASH,
+        bot_token=BOT_TOKEN
+        )
+    
 app = Client(
     "app",
     api_id=API_ID,
@@ -72,3 +82,4 @@ def get_file_details(update):
 #print("Bot Started..")
 
 app.run()
+flet.app(target=main)
